@@ -1,0 +1,51 @@
+ @media screen and (max-width:768px) {
+  #bodyCont{
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  #regCont{
+    border-radius: 20px;
+    flex-direction: column;
+    margin: 2rem;
+    padding: 2.8rem;
+    background-color: blue;
+    color: white;  
+    #alert{
+      padding-top: 2rem;
+    }
+  }
+}
+
+.userInputCont{
+  display: flex;
+  flex-direction: column;
+
+  .user-inp-reg{
+    padding: 1rem;
+  }
+
+  input{
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    padding: 10px;
+  }
+  
+  #btnCont{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+}
+
+#link-tags{
+  color: white;
+  padding-top: 2rem;
+  display: flex;
+
+  a{
+    color: white;
+    text-decoration: none;
+  }
+}
+}

@@ -1,0 +1,352 @@
+@import './fonts';
+
+@mixin paddingSides ($padding-left, $padding-right) {
+  padding-right: $padding-right;
+  padding-left: $padding-left;
+}
+
+@mixin paddingTopBot ($padding-top, $padding-bot) {
+  padding-top: $padding-top;
+  padding-bottom: $padding-bot;
+}
+
+#bodyCont{
+  width:100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background-color: #080325;
+  #loginCont{
+    @include raleway(inherit);
+    border-radius: 20px;
+    height: 30rem;
+    padding: 2.8rem;
+    margin: 1.5rem;
+    background-color: #4F46E5;
+    color: white;  
+    display: flex;
+    flex-direction: row;
+
+    #alert{
+      padding-top: 1rem;
+      opacity: 50%;
+    }
+  }
+}
+
+.userInputCont{
+  display: flex;
+  flex-direction: column;
+
+  .user-inp{
+    padding-top: .5rem;
+    padding-bottom: 1rem;
+  }
+
+  input{
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    padding: 10px;
+    max-width: 20rem;
+  }
+  
+  #btnCont{
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+
+    .loginBtn{
+      
+      padding: .8rem;
+      @include paddingSides(1.6rem, 1.6rem);
+      color: white;
+      background-color: #4F46E5;
+      font-family: 'Raleway', sans-serif;
+      border-radius: 10px;
+      border: .5px solid white;
+      outline: none;
+    }
+  }
+
+}
+
+#link-tags{
+  color: white;
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+
+  a{
+    color: white;
+    text-decoration: none;
+  }
+}
+
+.imageCont{
+
+  display: flex;
+  align-items: center;
+  @include paddingSides(3rem, 0);
+
+  #savePiggy{
+    width: 40rem;
+    border-radius: 10px;
+  }  
+}
+
+ @media screen and (max-width:970px) {
+  #bodyCont{
+    width:100vw;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: #080325;
+  
+    #loginCont{
+      @include raleway(inherit);
+      border-radius: 20px;
+      height: 30rem;
+      padding: 2.8rem;
+      margin: 1.5rem;
+      background-color: #4F46E5;
+      color: white;  
+      display: flex;
+      flex-direction: row;
+  
+      #alert{
+        padding-top: 1rem;
+        opacity: 50%;
+      }
+    }
+  }
+  
+  .userInputCont{
+    display: flex;
+    flex-direction: column;
+  
+    .user-inp{
+      padding-top: .5rem;
+      padding-bottom: 1rem;
+    }
+  
+    input{
+      border-radius: 5px;
+      border: none;
+      outline: none;
+      padding: 10px;
+      max-width: 20rem;
+    }
+    
+    #btnCont{
+      padding-top: 3rem;
+      padding-bottom: 1rem;
+  
+      .loginBtn{
+        
+        padding: .8rem;
+        @include paddingSides(1.6rem, 1.6rem);
+        color: white;
+        background-color: #4F46E5;
+        font-family: 'Raleway', sans-serif;
+        border-radius: 10px;
+        border: .5px solid white;
+        outline: none;
+      }
+    }
+  
+  }
+  
+  #link-tags{
+    color: white;
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+  
+    a{
+      color: white;
+      text-decoration: none;
+      padding-top: 10px;
+    }
+  }
+  
+  .imageCont{
+  
+    display: flex;
+    align-items: center;
+    @include paddingSides(3rem, 0);
+  
+    #savePiggy{
+      width: 30rem;
+      border-radius: 10px;
+    }  
+  }
+}
+
+@media screen and (max-width:870px) {
+  #bodyCont{
+    width:100vw;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: #080325;
+  
+    #loginCont{
+      @include raleway(inherit);
+      border-radius: 20px;
+      height: 30rem;
+      padding: 2.8rem;
+      margin: 1.5rem;
+      background-color: #4F46E5;
+      color: white;  
+      display: flex;
+      flex-direction: row;
+  
+      #alert{
+        padding-top: 1rem;
+        opacity: 50%;
+      }
+    }
+  }
+  
+  .userInputCont{
+    display: flex;
+    flex-direction: column;
+  
+    .user-inp{
+      padding-top: .5rem;
+      padding-bottom: 1rem;
+    }
+  
+    input{
+      border-radius: 5px;
+      border: none;
+      outline: none;
+      padding: 10px;
+      max-width: 20rem;
+    }
+    
+    #btnCont{
+      padding-top: 3rem;
+      padding-bottom: 1rem;
+  
+      .loginBtn{
+        
+        padding: .8rem;
+        @include paddingSides(1.6rem, 1.6rem);
+        color: white;
+        background-color: #4F46E5;
+        font-family: 'Raleway', sans-serif;
+        border-radius: 10px;
+        border: .5px solid white;
+        outline: none;
+      }
+    }
+  
+  }
+  
+  #link-tags{
+    color: white;
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+  
+    a{
+      color: white;
+      text-decoration: none;
+      padding-top: 10px;
+    }
+  }
+  
+  .imageCont{
+  
+    display: flex;
+    align-items: center;
+    @include paddingSides(3rem, 0);
+  
+    #savePiggy{
+      width: 20rem;
+      border-radius: 10px;
+    }  
+  }
+}
+
+@media screen and (max-width:768px){
+
+  #bodyCont{
+    width: 100vw;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+
+    #loginCont{
+      border-radius: 20px;
+      height: fit-content;
+      margin: 2rem;
+      padding: 2.8rem;
+      background-color: #4F46E5;
+      color: white;  
+
+      #alert{
+        padding-top: 2rem;
+      }
+    }
+  }
+  
+  .userInputCont{
+    display: flex;
+    flex-direction: column;
+  
+    .user-inp{
+      padding: 1rem;
+      @include paddingSides(0, 0)
+    }
+  
+    input{
+      border-radius: 5px;
+      border: none;
+      outline: none;
+      padding: 10px;
+    }
+    
+    #btnCont{
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+
+      .loginBtn{
+      
+        padding: .8rem;
+        @include paddingSides(1.6rem, 1.6rem);
+        color: white;
+        background-color: #4F46E5;
+        font-family: 'Raleway', sans-serif;
+        border-radius: 10px;
+        border: .5px solid white;
+        outline: none;
+      }
+    }
+  
+  }
+  
+  #link-tags{
+    color: white;
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+  
+    a{
+      color: white;
+      text-decoration: none;
+    }
+  }
+  
+  .imageCont{
+    display: none;
+
+    #savePiggy{
+      display: none;
+    }
+  }
+}
