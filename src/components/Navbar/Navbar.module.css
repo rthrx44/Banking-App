@@ -1,0 +1,19 @@
+.nav {
+  background-color: #4f46e5;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 70em;
+}
+
+.logo {
+  text-decoration: none;
+  font-size: 35px;
+  color: #ffffff;
+}
+
+.login {
+  font-size: 30px;
+  color: #ffffff;
+}
