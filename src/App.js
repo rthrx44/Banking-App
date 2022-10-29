@@ -1,7 +1,11 @@
-import Navbar from "./components/Navbar/Navbar.js";
+import Login from "./pages/Category/Login.js";
 
 function App() {
-  return <Navbar />;
+  return (
+    <>
+      <Login />
+    </>
+  );
 }
 
 export default App;

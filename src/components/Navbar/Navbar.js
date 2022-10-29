@@ -7,7 +7,7 @@ export default function Navbar() {
         <i class="fa-solid fa-peseta-sign"></i>eso{" "}
         <i class="fa-solid fa-dollar-sign"></i>ense
       </a>
-      <a href="/" className={classes.login}>
+      <a href="userlogin" className={classes.login}>
         <i class="fa-solid fa-arrow-right-to-bracket"></i>
       </a>
     </nav>
