@@ -160,24 +160,22 @@
 
 .nav-footer {
   position: absolute;
-  bottom: 35px;
+  bottom: 25px;
   width: 100%;
-  height: 120px;
+  height: 150px;
   grid-template-columns: 2fr 1fr;
   background-color: #282c34;
-}
-
-.nav-footer img {
-  height: 35px;
 }
 
 .nav-details {
   display: flex;
   flex-direction: column;
+  margin: auto 15px;
+  margin: 10px 0;
 }
 
 .nav-details img {
-  width: 75px;
+  width: 70px;
   height: 40px;
   padding: 0 10px 0 25px;
 }
@@ -200,10 +198,21 @@
   font-weight: 400;
 }
 
-.logout-icon {
+.logout-container {
+  width: 4.9em;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  padding: 0 0 0 18px;
+  border-radius: 10px;
 }
 
-.logout-icon:hover {
+.logout-container .logout-icon {
+  height: 35px;
+  cursor: pointer;
+}
+
+.logout-container:hover {
   background-color: #4f46e5;
-  transition: 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }

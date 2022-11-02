@@ -63,19 +63,23 @@ const SideNavBar = () => {
         </div>
       </div>
       <div className="nav-footer">
-        <div className="nav-details">
-          <img src="/img/profile.png" alt="admin avatar" srcSet="" />
-          <div className="nav-footer-info">
-            <p className="nav-footer-user-name">Ruther D.</p>
-            <p className="nav-footer-user-position">Admin</p>
+        {isExpended && (
+          <div className="nav-details">
+            <img src="/img/profile.png" alt="admin avatar" srcSet="" />
+            <div className="nav-footer-info">
+              <p className="nav-footer-user-name">Ruther D.</p>
+              <p className="nav-footer-user-position">Admin</p>
+            </div>
           </div>
+        )}
+        <div className="logout-container">
+          <img
+            className="logout-icon"
+            src="/img/logout.png"
+            alt="logout"
+            srcSet=""
+          />
         </div>
-        <img
-          className="logout-icon"
-          src="/img/logout.png"
-          alt="logout"
-          srcSet=""
-        />
       </div>
     </div>
   );
