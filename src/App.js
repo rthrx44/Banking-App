@@ -1,10 +1,10 @@
-import Login from "./pages/Category/Login.js";
+import SideNavBar from "./SideNavBar/SideNavBar";
 
 function App() {
   return (
-    <>
-      <Login />
-    </>
+    <div className="App">
+      <SideNavBar />
+    </div>
   );
 }
 
